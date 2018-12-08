@@ -10,8 +10,7 @@ module.exports = {
   },
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./dist",
-      host: '192.168.1.66'
+    contentBase: "./dist"
   },
   module: {
     rules: [
