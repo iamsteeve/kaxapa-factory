@@ -10,7 +10,8 @@ module.exports = {
   },
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
+      host: '192.168.1.66'
   },
   module: {
     rules: [
@@ -32,7 +33,13 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        use: [{
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: 'img/'
+            }
+        }],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -45,7 +52,8 @@ module.exports = {
       {
         test: /\.xml$/,
         use: ["xml-loader"]
-      }
+      },
+
     ]
   },
   plugins: [
