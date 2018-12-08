@@ -1,6 +1,6 @@
 {
   "name": "kaxapa-factory",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "Una propuesta para Kaxapa Factory para mejorar el sitio web.",
   "private": true,
   "scripts": {
