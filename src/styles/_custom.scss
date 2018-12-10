@@ -47,3 +47,38 @@ nav {
     justify-content: center;
 
 }
+
+
+.delights-groups{
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    .delights-section{
+        display: flex;
+        width: 100%;
+
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        @media #{$medium-and-up} {
+            width: 70%;
+        }
+        @media #{$large-and-up} {
+            width: 40%;
+        }
+
+    }
+    #delights-footer{
+        padding-top: 2rem;
+    }
+}
+
+#info-food{
+
+    .row-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        @media #{$small-and-down} {
+            display: block;
+        }
+    }
+}

@@ -18,14 +18,20 @@ const scroll = new SmoothScroll('[data-scroll]',{
 $(function () {
     Aos.init();
     const sidenav = document.querySelectorAll('.sidenav');
-    const instanceSidenav = M.Sidenav.init(sidenav, {});
+    M.Sidenav.init(sidenav, {});
 
     const parallax = document.querySelectorAll('.parallax');
-    const instanceParallax = M.Parallax.init(parallax, {});
+    M.Parallax.init(parallax, {});
 
     const select = document.querySelectorAll('select');
-    const instanceSelect = M.FormSelect.init(select,{})
+    M.FormSelect.init(select,{})
 
+
+    const slider = document.querySelectorAll('.slider');
+    M.Slider.init(slider, {
+        interval:4000,
+        height: 500
+    })
 
 });
 
