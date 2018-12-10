@@ -2,7 +2,8 @@ nav {
     font-weight: 500;
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
-    padding:0px 20px;
+    padding:0 20px;
+    z-index: 776;
     @media  #{$small-and-down}{
         box-shadow: none;
         background: rgba(0, 0, 0, 0.1);
@@ -16,7 +17,9 @@ nav {
             }
         }
     }
+
 }
+
 
 .hero-section-image {
     background-image: url('../images/hotcake.png'),url('../images/logokaxapa.png');
@@ -72,6 +75,27 @@ nav {
 }
 
 #info-food{
+    .card-magic{
+        overflow: hidden;
+        img {
+            opacity: .5;
+            transform: translate(0,0);
+            /*
+            Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
+            */
+            transition: opacity .25s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .img-container {
+        transition: transform .1s ease;
+        background-color: black;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 
     .row-reverse{
         display: flex;
@@ -96,4 +120,28 @@ nav {
 
 }
 
+#beautiful-picture{
+    .mask-img{
+        background-color: #404040;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    img {
+        opacity: .5!important;
+        z-index: 1;
+    }
+}
 
+#beautiful-picture-2{
+    .mask-img{
+        background-color: #404040;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    img {
+        opacity: .4!important;
+        z-index: 1;
+    }
+}
