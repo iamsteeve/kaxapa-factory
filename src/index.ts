@@ -15,7 +15,6 @@ const scroll = new SmoothScroll('[data-scroll]',{
     offset: 0,
 });
 
-
 $(function () {
     Aos.init();
     const sidenav = document.querySelectorAll('.sidenav');
