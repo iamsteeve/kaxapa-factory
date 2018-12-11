@@ -1,5 +1,14 @@
 @import "~materialize-css/sass/components/normalize";
 
+@font-face {font-family: "BelindaW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.eot");
+    src: url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/f6a8b2423790ec81bbbd18662bbc7f03.svg#BelindaW00-Regular") format("svg");
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
 
