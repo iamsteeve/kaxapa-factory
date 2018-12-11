@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "Kaxapa Factory",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
+}

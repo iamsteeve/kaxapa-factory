@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "now-build": "webpack"
   },
   "repository": {
     "type": "git",
