@@ -221,3 +221,12 @@ nav {
 
     }
 }
+
+.holo {
+    @media #{$medium-and-up} {
+        padding-top: 4rem;
+    }
+    @media #{$large-and-up} {
+        padding-top: 6rem;
+    }
+}
