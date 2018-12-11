@@ -38,6 +38,7 @@ nav {
     @media #{$small-and-down} {
         height: 100vh;
     }
+
     span {
         font-family: 'BelindaW00-Regular', sans-serif;
         font-size: inherit;
@@ -58,7 +59,7 @@ nav {
 
 }
 
-.opacity-magic{
+.opacity-magic {
     background-color: #404040;
     width: inherit;
     height: inherit;
@@ -90,6 +91,7 @@ nav {
             @media #{$small-and-down} {
                 border-radius: 0;
             }
+
             .container-img {
                 background-color: #404040;
                 height: inherit;
@@ -97,6 +99,7 @@ nav {
                 @media #{$small-and-down} {
                     border-radius: 0;
                 }
+
                 img {
                     opacity: .5;
                     border-radius: inherit;
@@ -147,10 +150,10 @@ nav {
         }
     }
 }
-.magic-font{
+
+.magic-font {
     font-family: 'BelindaW00-Regular', sans-serif;
 }
-
 
 
 .inputsfooter {
@@ -196,9 +199,24 @@ nav {
     }
 }
 
-#tituloscursiva{
+#tituloscursiva {
 
     font-family: 'BelindaW00-Regular', sans-serif;
     margin-bottom: 0px;
 
+}
+
+.map-responsive {
+    @media #{$small-and-down} {
+        width: 80%;
+        align-self: center;
+    }
+}
+
+.flexa {
+    @media #{$small-and-down} {
+        display: flex;
+        justify-content: center;
+
+    }
 }
