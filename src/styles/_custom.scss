@@ -1,12 +1,12 @@
 nav {
     font-weight: 500;
     position: fixed;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     padding: 0 20px;
     z-index: 776;
     @media  #{$small-and-down}{
         box-shadow: none;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.4);
 
     }
 
@@ -116,6 +116,7 @@ nav {
 }
 
 #info-food {
+    padding: 2em 0;
     .card-magic {
         overflow: hidden;
 
