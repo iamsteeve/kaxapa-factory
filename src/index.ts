@@ -14,8 +14,8 @@ const scroll = new SmoothScroll('[data-scroll]',{
     easing:'easeInOutCubic',
     offset: 0,
 });
-
 $(function () {
+
     Aos.init();
     const sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav, {});
