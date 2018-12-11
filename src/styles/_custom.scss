@@ -2,15 +2,16 @@ nav {
     font-weight: 500;
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
-    padding:0 20px;
+    padding: 0 20px;
     z-index: 776;
     @media  #{$small-and-down}{
         box-shadow: none;
         background: rgba(0, 0, 0, 0.1);
 
     }
-    .brand-logo{
-        img{
+
+    .brand-logo {
+        img {
             height: 52px;
             @media  #{$small-and-down}{
                 height: 56px;
@@ -22,39 +23,53 @@ nav {
 
 
 .hero-section-image {
-    background-image: url('../images/hotcake.png'),url('../images/logokaxapa.png');
+    background-image: url('../images/hotcake.png');
 
 
     /* Create the parallax scrolling effect */
 
-    background-attachment: fixed,fixed;
-    background-position: center,center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     width: 100%;
     height: 100vh;
     @media #{$small-and-down} {
         height: 100vh;
     }
+    span {
+        font-family: 'BelindaW00-Regular', sans-serif;
+        font-size: inherit;
+    }
 
 }
 
-.box{
+.box {
     margin-top: 20px;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.flexibox{
+
+.flexibox {
     justify-content: center;
 
 }
 
-.delights-groups{
+.opacity-magic{
+    background-color: #404040;
+    width: inherit;
+    height: inherit;
+    opacity: .5;
+}
+
+.delights-groups {
     padding-top: 2rem;
     padding-bottom: 10rem;
-    .delights-section{
+
+    .delights-section {
         font-family: 'BelindaW00-Regular', sans-serif;
         display: flex;
         width: 100%;
@@ -69,36 +84,62 @@ nav {
             width: 40%;
         }
 
+
+        .slides {
+            border-radius: 10%;
+            @media #{$small-and-down} {
+                border-radius: 0;
+            }
+            .container-img {
+                background-color: #404040;
+                height: inherit;
+                border-radius: 10%;
+                @media #{$small-and-down} {
+                    border-radius: 0;
+                }
+                img {
+                    opacity: .5;
+                    border-radius: inherit;
+                }
+            }
+        }
+
+
     }
-    #delights-footer{
+
+    #delights-footer {
         padding-top: 2rem;
     }
 }
 
-#info-food{
-    .card-magic{
+#info-food {
+    .card-magic {
         overflow: hidden;
+
         img {
             opacity: .5;
-            transform: translate(0,0);
+            transform: translate(0, 0);
             /*
             Change the opacity value to change how "faded" you want the image to appear when it is not hovered.
             */
             transition: opacity .25s ease-in-out;
+
             &:hover {
                 opacity: 1;
             }
         }
     }
+
     .img-container {
         transition: transform .1s ease;
         background-color: black;
-        &:hover{
+
+        &:hover {
             transform: scale(1.1);
         }
     }
 
-    .row-reverse{
+    .row-reverse {
         display: flex;
         flex-direction: row-reverse;
         @media #{$small-and-down} {
@@ -106,14 +147,18 @@ nav {
         }
     }
 }
-.inputsfooter{
+.magic-font{
+    font-family: 'BelindaW00-Regular', sans-serif;
+}
+
+.inputsfooter {
 
     margin-bottom: 0;
     margin-top: 0;
 
 }
 
-#logo2{
+#logo2 {
 
     display: block;
     margin: auto;
@@ -121,28 +166,30 @@ nav {
 
 }
 
-#beautiful-picture{
-    .mask-img{
+#beautiful-picture {
+    .mask-img {
         background-color: #404040;
         width: 100%;
         height: 100%;
         z-index: -1;
     }
+
     img {
-        opacity: .5!important;
+        opacity: .5 !important;
         z-index: 1;
     }
 }
 
-#beautiful-picture-2{
-    .mask-img{
+#beautiful-picture-2 {
+    .mask-img {
         background-color: #404040;
         width: 100%;
         height: 100%;
         z-index: -1;
     }
+
     img {
-        opacity: .4!important;
+        opacity: .4 !important;
         z-index: 1;
     }
 }
